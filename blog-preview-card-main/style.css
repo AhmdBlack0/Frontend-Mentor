@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+:root {
+  --white: hsl(0, 0%, 100%); 
+  --grey: hsl(0, 0%, 50%); 
+  --black: hsl(0, 0%, 7%);
+  --yellow: hsl(47, 88%, 63%)
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--yellow);
+  padding: 2rem;
+  font-family: 'Figtree', sans-serif;
+}
+.parent {
+  background-color: var(--white);
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--black);
+  border-radius: 1rem;
+  box-shadow: 10px 10px 0px var(--black);
+  margin-bottom: 2rem;
+  max-width: 450px;
+}
+ul {
+  list-style-type: none;
+  display: list-item;
+}
+p {
+  font-size: 16px;
+}
+.parent .image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.parent div h2 {
+  display: inline-block;
+  background-color: var(--yellow);
+  padding: 3px 8px;
+  margin: 2rem 0 1.5rem;
+  border-radius: 4px;
+}
+h1 {
+  margin: 1rem 0;
+}
+h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+h1~p {
+  margin: 1.5rem 0;
+  color: var(--grey);
+}
+.parent .footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
