@@ -26,7 +26,7 @@ header .logo {
   margin: 40px 0;
   width: 100px;
 }
-header .intro {
+header .first {
   text-align: center;
   max-width: 550px;
 }
@@ -38,7 +38,7 @@ a {
   color: white;
   font-weight: bold;
 }
-header .intro p {
+header .first p {
   margin: 20px 0 30px;
   color: var(--grayish-blue);
 
@@ -62,10 +62,10 @@ button:hover {
 .btn-two, .btn-2 {
   box-shadow: 1px 1px 5px 1px var(--light-blue);;
 }
-header .intro .buttons .btn-one {
+header .first .buttons .btn-one {
   background-color: var(--strong-cyan);
 }
-header .intro .buttons .btn-two {
+header .first .buttons .btn-two {
   background-color: var(--light-blue);
 }
 .content .sec-one {
