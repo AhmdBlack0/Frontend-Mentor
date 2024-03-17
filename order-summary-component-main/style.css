@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+  --pale-blue: hsl(225, 100%, 94%); 
+  --bright-blue: hsl(245, 75%, 52%); 
+  --very-pale-blue: hsl(225, 100%, 98%); 
+  --desaturated-blue: hsl(224, 23%, 55%); 
+  --dark-blue: hsl(223, 47%, 23%);
+  --radius-size: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+}
+p {
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+a {
+  text-decoration: none;
+}
+.parent {
+  max-width: 400px;
+  background-color: white;
+  text-align: center;
+  border-radius: var(--radius-size);
+}
+.parent .hero-img {
+  width: 100%;
+  border-radius: var(--radius-size) var(--radius-size) 0 0;
+}
+.parent h1 {
+  margin: 30px 0 20px;
+}
+.parent h1+p {
+  width: 80%;
+  margin: 20px auto;
+}
+.parent .box {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  border-radius: var(--radius-size);
+}
+.parent .box .right-sec {
+  display: flex;
+  gap: 15px;
+}
+.parent .box .right-sec h3 {
+  font-size: 18px;
+}
+.parent .box button a {
+  color: var(--bright-blue);
+  text-decoration: underline solid;
+  transition: all .2s;
+}
+.parent .box button a:hover {
+  opacity: 0.7;
+}
+.parent .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.parent .buttons button:first-child {
+  background-color: var(--bright-blue);
+  width: 80%;
+  margin: 0 auto 10px;
+  height: 6vh;
+  border-radius: 7px;
+  box-shadow: 0px 1px 7px 0px var(--bright-blue);
+  transition: all .2s;
+}
+.parent .buttons button:first-child:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.parent .buttons button:first-child a {
+  color: white;
+}
+.parent .buttons button:nth-child(2) {
+  margin: 0 auto 40px;
+}
+.parent .buttons button:nth-child(2) a {
+  color: var(--desaturated-blue);
+  transition: all .2s;
+}
+.parent .buttons button:nth-child(2):hover a {
+  color: var(--dark-blue)
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .parent {
+    width: 350px;
+  }
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}
